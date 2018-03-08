@@ -1,18 +1,18 @@
+body{
+  background-color: #000;
+}
 header{
   background-color: #5b7989;
-  width: 98.8%;
+  width: 100%;
   height: 40px;
-  position: fixed;
-  left: 0px;
-  top: 0px;
   color: white;
   font-size: 25px;
-  padding: 10px 0 0 10px;
   text-shadow: 1px 1px #02010a;
   border-radius: 10px 10px 0 0;
 }
 header p{
   margin-top: 0px;
+  padding: 5px;
 }
 nav{
   position: fixed;
@@ -24,58 +24,56 @@ a{
   text-decoration: none;
   font-size: 14px;
 }
-#imagenCentral{
-  background-color: #82c3a6;
-  width: 100%;
 
-  position: fixed;
-  top: 50px;
-  left: 0px;
-}
-#imagenCentral img{
-  display: block;
-  margin: auto;
-  max-width: 480px;
-  padding: 2%;
-}
-#imagenSecundaria{
+#Contenido{
   background-color: #d5c75f;
   width: 100%;
-  position: fixed;
-  top: 350px;
-  left: 0px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .bloque1{
+  background-color: #82c3a6;
   order: 1;
-  flex-basis: 5%;
+  flex-basis: 100%;
+  height: 90%;
+  padding: 3%;
+}
+.bloque1 img{
+  max-width: 600px;
+  display: block;
+  margin: auto;
 }
 .bloque2{
+  background-color: #FFF;
   order: 2;
-  flex-basis: 45%;
+  flex-basis: 5%;
+}
+.bloque3{
+  order: 2;
+  flex-basis: 42%;
   margin: 10px;
 }
-.bloque2 img{
+.bloque3 img{
   max-width: 90%;
   max-height: 90%;
   display: block;
   margin: auto;
   padding: 2%%;
 }
-.bloque3{
+.bloque4{
   order: 3;
-  flex-basis: 45%;
+  flex-basis: 42%;
   margin: 10px;
 }
-.bloque3 img{
+.bloque4 img{
   max-width: 90%;
   display: block;
   margin: auto;
 }
-.bloque4{
-  order: 4;
+.bloque5{
+  background-color: #FFF;
+  order: 5;
   flex-basis: 5%;
 }
 footer {
@@ -83,7 +81,7 @@ footer {
   width: 100%;
   height: 50px;
   position: fixed;
-  top: 550px;
+  top: 520px;
   left: 0px;
   border-radius: 0 0 10px 10px;
 }
