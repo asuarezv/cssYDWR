@@ -1,7 +1,10 @@
 body{
   background-color: #02010a;
-  max-width: 1080px;
   font-family: 'Dancing Script', cursive;
+}
+.Contenido{
+  max-width: 900px;
+  margin: 0 auto;
 }
 header{
   max-width: 100%;
@@ -32,62 +35,106 @@ a{
   text-decoration: none;
 }
 
-#Contenido{
+img{
+  box-shadow: 2px 2px #02010a;
+}
+
+#Seccion0{
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-img{
-  box-shadow: 2px 2px #02010a;
+
+#Seccion1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
+
+#Seccion2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .bloque1{
   background-color: #82c3a6;
-  order: 1;
+  padding: 1%;
   flex-basis: 100%;
-  height: 90%;
-  padding: 3%;
 }
 .bloque1 img{
-  width: 90%;
-  max-width: 750px;
   display: block;
   margin: auto;
+  width: 100%;
 }
+
 .bloque2{
   background-color: #d5c75f;
-  order: 2;
-  flex-basis: 48%;
   padding: 1%;
+  flex-basis: 48%;
 }
 .bloque2 img{
-  width: 90%;
-  max-width: 500px;
   display: block;
   margin: auto;
+  width: 100%;
 }
 .bloque2 img:hover{
   transform: rotate(10deg);
   border: 2px solid #000;
   box-shadow: 5px 5px #82c3a6;
 }
+
 .bloque3{
   background-color: #d5c75f;
-  order: 3;
-  flex-basis: 48%;
   padding: 1%;
+  flex-basis: 48%;
 }
 .bloque3 img{
-  width: 90%;
-  max-width: 500px;
   display: block;
   margin: auto;
+  width: 100%;
 }
 .bloque3 img:hover{
   transform: translate(5px,20px);
   border: 2px solid #000;
   box-shadow: 5px 5px #82c3a6;
 }
+
+.bloque4{
+  background-color: #d5c75f;
+  padding: 1%;
+  flex-basis: 33%;
+}
+.bloque4 img{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.bloque5{
+  background-color: #d5c75f;
+  padding: 1%;
+  flex-basis: 33%;
+}
+.bloque5 img{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.Blur{
+  filter: blur(10px);
+}
+.GrayScale{
+  filter: grayscale(100%);
+}
+.Sepia{
+  filter: sepia(90%);
+}
+
 
 footer {
   background-color: #C6d5c5;
@@ -123,4 +170,17 @@ footer {
 .f04{
   order: 4;
   flex-basis: 25%;
+}
+
+@media (max-width:900px){
+  #Seccion1,#Seccion2{
+    flex-wrap: wrap;
+  }
+  .bloque2,.bloque3,.bloque4,.bloque5,.f01,.f02,.f03,.f04{
+    flex-basis: 100%;
+  }
+  footer{
+    flex-wrap: wrap;
+    height: 100%;
+  }
 }
