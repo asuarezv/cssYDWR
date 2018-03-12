@@ -5,6 +5,7 @@ body{
 .Contenido{
   max-width: 900px;
   margin: 0 auto;
+
 }
 header{
   max-width: 100%;
@@ -13,10 +14,11 @@ header{
   flex-direction: row;
   flex-wrap: nowrap;
   color: white;
+  animation: rebote 1s;
 }
 .e01{
   background-color: #5b7989;
-  text-shadow: 1px 1px #02010a;
+  text-shadow: 2px 2px #02010a;
   font-size: 25px;
   color: white;
   border-radius: 10px 0 0 0;
@@ -35,11 +37,18 @@ header{
 }
 a{
   color: white;
+}
+
+.activo{
   text-decoration: none;
 }
 
 img{
   box-shadow: 2px 2px #02010a;
+}
+
+h2{
+  text-align: center;
 }
 
 #Seccion0{
@@ -83,6 +92,7 @@ img{
   display: block;
   margin: auto;
   width: 100%;
+  border: 1px solid #000;
 }
 .bloque2 img:hover{
   transform: rotate(10deg);
@@ -99,6 +109,7 @@ img{
   display: block;
   margin: auto;
   width: 100%;
+  border: 1px solid #000;
 }
 .bloque3 img:hover{
   transform: translate(5px,20px);
@@ -213,5 +224,17 @@ footer {
   .e02{
     font-size: 15px;
     color: white;
+  }
+}
+
+@-webkit-keyframes rebote{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
   }
 }
